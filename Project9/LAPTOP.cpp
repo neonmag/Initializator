@@ -3,12 +3,6 @@
 
 using namespace std;
 
-LAPTOP::LAPTOP()
-{
-	this->model = nullptr;
-	this->price = 0.0;
-}
-
 LAPTOP::LAPTOP(const char* model, double price, const char* modelCPU, int cores, int ttp, int ghz, const char* modelRAM, const char* typeOfSpeed, int sizeRAM, int speedRAM, const char* modelHDD, int countOfTurns, int sizeHDD, const char* modelGPU, int sizeGPU, int countOfVentus):cpu(modelCPU,cores,ttp,ghz),ram(modelRAM,typeOfSpeed,sizeRAM,speedRAM),hdd(modelHDD,countOfTurns,sizeHDD),gpu(modelGPU,sizeGPU,countOfVentus) // Initializator
 {
 	if (this->model != nullptr)
